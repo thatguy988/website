@@ -1,0 +1,323 @@
+/* Use Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333; /* Dark grey for text for better readability */
+}
+
+header {
+  background: #0056b3; /* A more subdued blue */
+  color: #ffffff;
+  padding: 20px 0; /* Increased vertical padding */
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Center navigation items */
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px; /* Increased spacing */
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold; /* Make links bold */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Gold color on hover for better visibility */
+}
+
+main {
+  padding: 20px;
+  text-align: left; /* Align text to left for easier reading */
+  max-width: 800px; /* Max width for better reading on large screens */
+  margin: 20px auto; /* Center main on the page */
+  background: #ffffff; /* White background for main content */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+footer {
+  background-color: #2c3e50; /* Darker color for footer */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative; /* Changed from fixed to relative */
+  width: 100%;
+  margin-top: 30px; /* Space between content and footer */
+}
+
+/* Focus and hover states for inputs and buttons */
+input[type="text"],
+input[type="email"],
+button,
+input[type="submit"] {
+  transition: all 0.3s ease; /* Smooth transition for focus states */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+button:focus,
+input[type="submit"]:focus {
+  box-shadow: 0 0 0 2px #0056b3; /* Highlight focus with a blue outline */
+}
+
+button,
+input[type="submit"] {
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #003d7a; /* Darker shade on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block; /* Stack navigation items vertically on smaller screens */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 10px;
+    max-width: 100%;
+  }
+}
+
+/* Subtle animations
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+} */
+
+body {
+  animation: fadeIn 1s ease-out; /* Fade in the entire body on load */
+}
+
+/* Enhanced form aesthetics */
+form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-angle {
+  background-color: #f9f9f9; /* Light background for the section */
+  padding: 40px 0; /* Top and bottom padding */
+}
+
+
+.subtitle {
+  display: block; /* Ensures subtitle goes to the next line */
+  font-size: 0.8em; /* Smaller text for subtitle */
+  color: #777; /* Grey color for subtitles */
+}
+
+.lead {
+  font-size: 1.2em; /* Larger text for lead paragraph */
+}
+
+.a-unstyled {
+  color: inherit; /* Prevent default anchor color */
+  text-decoration: none; /* No underline */
+}
+
+.ico {
+  font-size: 24px; /* Icon size */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.btn-primary, .btn-secondary {
+  margin-top: 20px; /* Space above buttons */
+}
+
+/* Add responsive behaviors as necessary */
+@media (max-width: 768px) {
+  .section-angle {
+      padding: 20px 0;
+  }
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
+}
+
+.hero-section picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the area without distorting the aspect ratio */
+  object-position: center; /* Center the image within the element */
+}
+
+.hero-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  padding: 10px; /* Padding to provide some space around the text */
+}
+
+
+
+
+.container {
+  padding: 20px;
+}
+
+.btn-secondary {
+  background-color: #0056b3; /* Customize button color */
+  border: none;
+}
+
+
+
+.navbar-light {
+  background-color: #ffffff !important; /* Ensure the navbar is truly white */
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: #555 !important; /* Darker color for text for better visibility */
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,.1); /* Light border for the toggler icon */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-brand {
+  color: #000; /* Black color for the brand for better visibility */
+}
+
+.navbar {
+  position: sticky; /* Keeps the navbar at the top of the viewport as you scroll */
+  top: 0; /* Anchor it to the top of the viewport */
+  z-index: 1000; /* Ensures the navbar stays on top of other page elements */
+  width: 100%; /* Full width of the viewport */
+  margin: 0; /* Removes any default margin */
+
+}
+
+.navbar-brand {
+  flex-grow: 0;  /*Prevents the brand from stretching */
+  margin-right: auto; /*Pushes everything else to the right, does not grow */
+}  
+
+.navbar-collapse {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-nav {
+  justify-content: flex-start; /* Start the nav items from the center of the remaining space */
+  width: 100%;
+
+  margin-left: 425px; /* Adjust this value based on your actual brand width to align properly */
+}
+
+.nav-item {
+  margin: 0 12px; /* Adjusted for even spacing */
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    position: static;
+    transform: none;
+    margin-right: 0; /* Remove auto margin when in mobile view */
+  }
+
+  .navbar-nav {
+    margin-left: 0; /* Reset margin in mobile view */
+  }
+
+  .navbar-collapse {
+    justify-content: center; /* Ensure nav items are centered in mobile view */
+  }
+}
+
+.main-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-cards .card {
+  background: #f8f9fa;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card-icon {
+  font-size: 2em; /* Adjust size as necessary */
+  color: #0056b3; /* Theme color */
+}
+
+.card-content h5 {
+  color: #333;
+  margin-top: 10px;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #004080;
+}
+
